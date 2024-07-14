@@ -1,0 +1,1086 @@
+*{
+    margin: 0px;  
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+/*Início da Barra de início*/
+
+
+/*Lado esquerdo*/
+#barra{
+    background-color: rgb(245, 245, 245);
+    height: 47px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#lado_esquerdo{
+    display: flex;
+    list-style: none;
+    font-size: 14px;
+    font-family:  Cairo, sans-serif;
+}
+#margen_li{
+    margin-right: 20px;
+}
+#margen_email{
+    margin-right: 10px;
+}
+
+
+/*Lado Direito*/
+#lado_direito{
+    display: flex;
+    list-style: none;
+    font-size: 14px;
+    font-family:  Cairo, sans-serif;
+}
+
+#USA{
+    height: 14px;
+    
+}
+
+#margen_li_usa{
+    margin-right: 6px;
+}
+
+#margen_li_english{
+    margin-right: 4px;
+}
+
+#margen_li_user{
+    margin-right: 10px;
+}
+
+
+/*English or Spanish?
+
+.seta_english{
+    border: solid;
+}
+
+#english_spanish{
+    border: solid;
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 58px;
+    text-align: left;
+    opacity: 0;
+}
+
+#margen_spanish{
+    margin-bottom: 2px;
+}
+*/
+
+
+/*Fm da Barra de início*/
+
+/*------------------------------------------------------------------------------------------*/
+
+
+/*Início da primeira parte*/
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    'esquerdo logo nav-bar nav-bar coracao_bolsa direito'
+    'esquerdo departaments categories categories telefone direito'
+    'esquerdo vazio img_principal img_principal img_principal direito'
+    'esquerdo drink_fruits drink_fruits drink_fruits drink_fruits direito' ;
+}
+
+#vazio{
+    grid-area: vazio;
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+/*Logo*/
+
+#logo{
+    height: 80px;
+    grid-area: logo;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#logo_conteudo{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+/*Barra de Navegação*/
+
+#nav-bar{
+    grid-area: nav-bar;
+}
+#nav-bar_conteudo{
+    padding-top: 30px;
+    padding-bottom: 24px;
+}
+#ul_nav-bar{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding-inline-start: 0px;
+    width: 70%;
+    font-family: Cairo, sans-serif;
+}
+#home_nav-bar{
+    color: rgb(127, 173, 57);
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+/*Coração, Bolsa e Item*/
+
+#coracao_bolsa{
+    grid-area: coracao_bolsa;
+}
+#coracao_conteudo{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: right;
+}
+#coracao_icones{
+    display: flex;
+    list-style: none;
+    color: rgb(111, 111, 111);
+    font-family: Cairo, sans-serif;
+    font-size: 14px;
+}
+#margen_li_coracao{
+    margin-right: 15px;
+}
+#margen_li_icones{
+    margin-right: 25px;
+}
+#item_150{
+    color: black;
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+/*Departamentos*/
+
+#departaments{
+    grid-area: departaments;
+    height: 51px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#departaments_caixa{
+    background-color: rgb(127, 173, 57);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#departaments_conteudo{
+    color: white;
+    font-size: 18px;
+    font-family: Cairo, sans-serif;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+/*Categorias*/
+
+#categories{
+    grid-area: categories;
+    border: 1px solid rgb(178, 178, 178);
+    padding-top: 15px;
+    padding-left: 18px;
+}
+#categories_conteudo{
+    font-size: 16px;
+    font-family: Cairo, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+#div_all_categories{
+    width: 182px;
+    display: flex;
+    justify-content: space-between;
+}
+#what_do_you{
+    font-size: 16px;
+    font-family: Cairo, sans-serif;
+    border: none;
+    color: rgb(178, 178, 178);
+    position: absolute;
+    left: 40%;
+}
+#butao_search{
+    background-color: rgb(127, 173, 57);
+    width: 110px;
+    position: absolute;
+    height: 55px;
+    left: 81.5%;
+    border: none;
+    text-align: center;
+    vertical-align: center;
+    color: white;
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+/*Telefone*/
+
+#telefone{
+    grid-area: telefone;
+}
+#telefone_conteudo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+}
+#telefone_icone{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+#telefone_numero{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Cairo, sans-serif;
+    font-size: 18px;
+}
+#telefone_support{
+    color: rgb(111, 111, 111);
+    font-size: 14px;
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+/*IMG_PRINCIPAL*/
+#img_principal{
+    grid-area: img_principal;
+    height: 480px;
+    padding-top: 30px;
+    padding-right: 160px;
+}
+#img_principal_conteudo{
+    background-image: url(banner.jpg.webp);
+    background-repeat: no-repeat;
+    width: 88%;
+    height: 80%;
+}
+#img_principal_txt{
+    width: 40%;
+    height: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 75px;
+}
+#img_principal_txt01{
+    font-family: Cairo, sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: rgb(127, 173, 57);
+    margin-bottom: 10px;
+}
+#img_principal_h1{
+    font-size: 46px;
+    font-family: Cairo, sans-serif;
+    color: rgb(37, 37, 37);
+}
+#img_principal_txt02{
+    font-size: 16px;
+    font-family: Cairo, sans-serif;
+    color: rgb(111, 111, 111);
+    margin-top: 10px;
+}
+#img_principal_btn{
+    width: 141px;
+    height: 41px;
+    color: white;
+    background-color: rgb(127, 173, 57);
+    font-family: Cairo, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    border: none;
+    margin-top: 30px;
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+/*Drink Fruits*/
+#drink_fruits{
+    grid-area: drink_fruits;
+    height: 270px;
+    display: flex;
+    justify-content: space-between;
+}
+.quadrado{
+    width: 18%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+#vegetables{
+    background-image: url(cat-3.jpg.webp);
+    background-repeat: no-repeat;
+}
+#drink_fruit_suco{
+    background-image: url(cat-4.jpg.webp);
+    background-repeat: no-repeat;
+}
+#drink_fruit_carne{
+    background-image: url(cat-5.jpg.webp);
+    background-repeat: no-repeat;
+}
+#fresh_fruit{
+    background-image: url(cat-1.jpg.webp);
+    background-repeat: no-repeat;
+}
+#drink_fruits_txt{
+    font-size: 18PX;
+    font-family: Cairo, sans-serif;
+}
+#drink_fruits_button{
+    height: 43px;
+    width: 222.5px;
+    background-color: white;
+    border: none;
+    margin-bottom: 21.6px;
+    letter-spacing: 2px;
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+/*Setas do drink fruits*/
+#lado_esquerdo_button{
+    height: 70px;
+    width: 30px;
+    border:1px solid rgb(235, 235, 235);
+    background-color: white;
+    margin-bottom: 100px;
+    margin-right: 20px;
+    
+}
+#vazio_esquerdo{
+    grid-area: esquerdo;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+
+
+#lado_direito_button{
+    height: 70px;
+    width: 30px;
+    border:1px solid rgb(235, 235, 235);
+    background-color: white;
+    margin-bottom: 100px;
+    margin-left: 20px;
+    
+}
+#vazio_direito{
+    grid-area: direito;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+/*Fim da primeira parte*/
+
+/*------------------------------------------------------------------------------------------*/
+
+/*Início do Featured Product*/
+
+#featured_product_conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#featured_product_lista_principal{
+    margin-top: 40px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#featured_product_txt{
+    font-size: 18px;
+    font-family: Cairo, sans-serif;
+    
+}
+#retangulo_verde{
+    background-color: rgb(127, 173, 57);
+    width: 80px;
+    height: 4px;
+    margin-top: 10px;
+}
+#featured_product_lista_navegacao{
+    list-style: none;
+    font-size: 16px;
+    font-family: Cairo, sans-serif;
+    display: flex;
+    margin-top: 35px;
+    
+    
+}
+.lista_navegacao_conteudo{
+    margin-right: 25px;
+}
+#lista_retangulos{
+    list-style: none;
+    display: flex;
+    margin-bottom: 40px;
+}
+#retangulo_all{
+    background-color: rgb(127, 173, 57);
+    width: 20px;
+    height: 2px;
+}
+#retangulo_oranges{
+    width: 65px;
+    height: 2px;
+    background-color: rgb(127, 173, 57);
+    opacity: 0;
+}
+#retangulo_fresh_meat{
+    width: 85px;
+    height: 2px;
+    background-color: rgb(127, 173, 57);
+    opacity: 0;
+}
+#retangulo_vegetables{
+    width: 84px;
+    height: 2px;
+    background-color: rgb(127, 173, 57);
+    opacity: 0;
+}
+#retangulo_fast{
+    width: 68px;
+    height: 2px;
+    background-color: rgb(127, 173, 57);
+    opacity: 0;
+}
+.retangulo_verde{
+    margin-right: 23px;
+}
+
+/*Fim do Featured Product*/
+
+/*------------------------------------------------------------------------------------------*/
+
+/*Início dos itens do Featured Product*/
+
+.container_featured_product{
+    width: 100%;
+    height: 1155px;
+    display: grid;   
+    grid-template-areas: 
+    'esquerda02 l1 l1 l1 l1 direita02'
+    'esquerda02 l2 l2 l2 l2 direita02'
+    'esquerda02 img_summer img_summer img_summer img_summer direita02'
+    ;
+    
+}
+
+.featured_iten_txt{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.crab_pool{
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: Cairo, sans-serif;
+}
+.RS30conto{
+    font-size: 18px;
+    font-family: Cairo, sans-serif;
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+/*L1 carne banana goiaba melancia*/
+#container_carne_banana{
+    grid-area: l1;
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+}
+
+/*Carne*/
+#carne{
+    height: 385px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#img_carne_featured{
+    width: 100%;
+    height: 270px;
+    background-image: url(cat-5.jpg.webp);
+}
+
+/*Banana*/
+#banana{
+    height: 385px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#img_banana_featured{
+    width: 100%;
+    height: 270px;
+    background-image: url(feature-2.jpg.webp);
+}
+
+/*Goiaba*/
+#goiaba{
+    height: 385px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#img_goiaba_featured{
+    width: 100%;
+    height: 270px;
+    background-image: url(feature-3.jpg.webp);
+}
+
+/*Melancia*/
+#melancia{
+    height: 385px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#img_melancia_featured{
+    width: 100%;
+    height: 270px;
+    background-image: url(feature-4.jpg.webp);
+}
+
+
+.quadrado_itens_l1{
+    width: 18%;
+}
+/*Fim da L1 carne banana goiaba melancia*/
+
+/*------------------------------------------------------------------------------------------*/
+
+/*L2 uva hamburguer manga maça*/
+#container_uva_manga{
+    grid-area: l2;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Uva*/
+#uva{
+    height: 385px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#img_uva_featured{
+    width: 100%;
+    height: 270px;
+    background-image: url(feature-5.jpg.webp);
+}
+
+/*Hamburguer*/
+#hamburguer{
+    height: 385px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#img_hamburguer_featured{
+    width: 100%;
+    height: 270px;
+    background-image: url(feature-6.jpg.webp);
+}
+
+/*Manga*/
+#manga{
+    height: 385px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#img_manga_featured{
+    width: 100%;
+    height: 270px;
+    background-image: url(feature-7.jpg.webp);
+}
+
+#maca{
+    height: 385px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#img_maca_featured{
+    width: 100%;
+    height: 270px;
+    background-image: url(feature-8.jpg.webp);
+}
+
+
+.quadrado_itens_l2{
+    width: 18%;
+}
+/*Fim L2 uva hamburguer manga maça*/
+
+/*------------------------------------------------------------------------------------------*/
+
+
+#img_summer_drink{
+    grid-area: img_summer;
+    display: flex;
+    justify-content: space-around;
+}
+
+#img_summerfruit{
+    width: 555px;
+    height: 262px;
+    background-image: url(banner-1.jpg.webp);
+}
+#img_dried_drinkfruit{
+    width: 555px;
+    height: 262px;
+    background-image: url(banner-2.jpg.webp);
+}
+
+
+
+
+
+#vazio_esquerda02{
+    grid-area: esquerda02;
+}
+#vazio_direita02{
+    grid-area: direita02;
+}
+.txt_invisivel_featured{
+    opacity: 0;
+}
+
+/*Fim dos itens do Featured
+
+/*------------------------------------------------------------------------------------------*/
+
+/*Início do Latest, Raded e Review*/
+
+#container_latest_rated_review{
+    display: grid;
+    grid-template-areas: 
+    'esquerda03 latest rated review direita03'
+    'esquerda03 iten_latest iten_rated iten_review direita03'
+    'esquerda03 iten_latest iten_rated iten_review direita03'
+    'esquerda03 iten_latest iten_rated iten_review direita03'
+    ;
+    margin-top: 80px;
+}
+#vazio_esquerda03{
+    grid-area: esquerda03;
+}
+#vazio_direita03{
+    grid-area: direita03;
+}
+
+/*-----------------------------------------------------------------*/
+/*Títulos*/
+.caixa_seta{
+    display: flex;
+}
+.seta_caixa_esquerda{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(243, 246, 250);
+    border: 1px solid rgb(230, 230, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.seta_caixa_direita{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(243, 246, 250);
+    border: 1px solid rgb(230, 230, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Título Latest*/
+#titulo_latest{
+    grid-area: latest;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 45px;
+}
+#latest_txt{
+    font-size: 20px;
+    font-family: Cairo, sans-serif;
+    color: rgb(28, 28, 28);
+}
+
+/*Título Rated*/
+#rated_txt{
+    font-size: 20px;
+    font-family: Cairo, sans-serif;
+    color: rgb(28, 28, 28);
+}
+#titulo_rated{
+    grid-area: rated;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 45px;
+}
+
+/*Título Review*/
+#review_txt{
+    font-size: 20px;
+    font-family: Cairo, sans-serif;
+    color: rgb(28, 28, 28);
+}
+#titulo_review{
+    grid-area: review;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 45px;
+}
+
+
+
+/*Conteúdo Crab Pool Security*/
+
+#latest{
+    grid-area: iten_latest;
+}
+#rated{
+    grid-area: iten_rated;
+}
+#review{
+    grid-area: iten_review;
+}
+#img_crab_alface{
+    width: 110px;
+    height: 110px;
+    background-image: url(lp-1.jpg.webp);
+}
+#img_crab_pimentao{
+    width: 110px;
+    height: 110px;
+    background-image: url(lp-2.jpg.webp);
+}
+#img_crab_frango{
+    width: 110px;
+    height: 110px;
+    background-image: url(lp-3.jpg.webp);
+}
+
+
+.crab_pool_APF{
+    display: flex;
+    margin-bottom: 20px;
+}
+.caixatxt_crab_APF{
+    padding-top: 10px;
+    margin-left: 25px;
+}
+.txt_crab_APF{
+    margin-bottom: 10px;
+    color: rgb(37, 37, 37);
+    font-family: Cairo, sans-serif;
+    font-size: 16px;
+}
+.RS30conto_crab_APF{
+    font-size: 18px;
+    font-family: Cairo, sans-serif;
+}
+
+/*Fim do Latest, Raded e Review*/
+
+/*------------------------------------------------------------------------------------------*/
+
+/*Início do From The Blog*/
+
+#container_from_blog{
+    display: grid;
+    grid-template-areas: 
+    'esquerda04 from from from direita04'
+    'esquerda04 conteudo_blog conteudo_blog conteudo_blog direita04'
+    ;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#vazio_esquerda04{
+    grid-area: esquerda04;
+}
+#vazio_direita04{
+    grid-area: direita04;
+}
+#conteudo_blog{
+    grid-area: conteudo_blog;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+/*Título do Blog*/
+#titulo_from_blog{
+    grid-area: from;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 103px;
+}
+#txt_titulo_blog{
+    font-size: 34px;
+    font-family: Cairo, sans-serif;
+}
+#barra_verde_blog{
+    width: 80px;
+    height: 4px;
+    background-color: rgb(127, 173, 57);
+    margin-top: 10px;
+}
+
+/*Conteúdo do Blog*/
+
+#img_suco_vermelho{
+    background-image: url(blog-1.jpg.webp);
+    width: 360px;
+    height: 258px;
+}
+#img_ervilha{
+    background-image: url(blog-2.jpg.webp);
+    width: 360px;
+    height: 258px;
+}
+#img_frutas{
+    background-image: url(blog-3.jpg.webp);
+    width: 360px;
+    height: 258px;
+}
+
+
+
+
+
+
+.txt_blog{
+    padding-top: 25px;
+}
+.titulo_txt{
+    font-size: 20px;
+    font-family: Cairo, sans-serif;
+    margin-bottom: 12px;
+}
+.margen_data{
+    margin-right: 15px;
+}
+.data_SEF{
+    padding-left: 0px;
+    color: rgb(178,178,178);
+    font-size: 16px;
+    font-family: Cairo, sans-serif;
+    display: flex;
+    list-style: none;
+    margin-bottom: 15px;
+}
+.p_txt_blog{
+    font-size: 16px;
+    font-family: Cairo, sans-serif;
+    margin-bottom: 25px;
+    color: rgb(111, 111, 111);
+}
+.imagem_do_blog{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*Fim do From The Blog*/
+
+/*------------------------------------------------------------------------------------------*/
+
+/*Início do footer*/
+
+#container_footer{
+    display: grid;
+    grid-template-areas: 
+    'esquerda05 informacoes informacoes informacoes direita05'
+    'esquerda05 copyrigth copyrigth copyrigth direita05'
+    ;
+    background-color: rgb(243, 246, 250);
+    padding-top: 70px;
+}
+
+#vazio_esquerda05{
+    grid-area: esquerda05;
+}
+#vazio_direita05{
+    grid-area: direita05;
+}
+#localizacao{
+    height: 251px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#links{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 97.5px ;
+}
+#area_email{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#copyrigth{
+    grid-area: copyrigth;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+}
+#informacoes{
+    grid-area: informacoes;
+    display: flex;
+    justify-content: center;
+}
+
+
+#img_logo_footer{
+    background-image: url(logo.png.webp);
+    width: 262px;
+    height: 50px;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+}
+#ul_localizacao{
+    font-size: 16px;
+    font-family: Cairo, sans-serif;
+    list-style: none;
+    padding-left: 0px;
+}
+.margen_li_localizacao{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#caixa_listas_links{
+    display: flex;
+}
+#useful_links{
+    font-size: 16px;
+    font-family: Cairo, sans-serif;
+    margin-bottom: 10px;
+}
+.ul_links{
+    list-style: none;
+    padding-left: 0px;
+    font-size: 14px;
+    font-family: Cairo, sans-serif;
+}
+
+.espacamento{
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+
+#join_email{
+    font-size: 16px;
+    font-family: Cairo, sans-serif;
+    margin-bottom: 10px;
+}
+#txt_join_email{
+    font-size: 14px;
+    font-family: Cairo, sans-serif;
+    margin-bottom: 25px;
+}
+#input_email{
+    border: 1px solid rgb(237, 237, 237);
+    font-size: 16px;
+    font-family: Cairo, sans-serif;
+    height: 46px;
+    width: 360px;
+}
+#button_email{
+    font-size: 14px;
+    font-family: Cairo, sans-serif;
+    width: 121px;
+    height: 46px;
+    background-color: rgb(127, 173, 57);
+    border: none;
+    color: white;
+    margin-bottom: 25px;
+}
+#redes_sociais_footer{
+    display: flex;
+}
+.icone_redesocial_footer{
+    width: 41px;
+    height: 41px;
+    border-radius: 100%;
+    border: 1px solid rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    background-color: white;
+}
+
+
+#txt_copyrigth_footer{
+    font-size: 16px;
+    font-family:  Cairo, sans-serif;
+    color: rgb(33, 37, 41);
+    border-top: 1px solid rgb(235, 235, 235);
+    border: none;
+}
+#img_pratrocinadores_footer{
+    background-image: url(payment-item.png.webp);
+    width: 286px;
+    height: 23px;
+}
